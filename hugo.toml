@@ -10,7 +10,7 @@ enableEmoji = false
 enableGitInfo = false
 
 # We do not use taxonomies; disable the empty /tags/ and /categories/ pages.
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 # Relative URLs are computed by Hugo (relref / relURL); baseURL is supplied at
 # build time by the GitHub Actions workflow so the same source builds anywhere.
