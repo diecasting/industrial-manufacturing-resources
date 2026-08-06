@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article class="content-page">
+  {{ partial "breadcrumb.html" . }}
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    <p class="page-meta">
+      {{ with .Params.reading_time }}<span class="meta-pill">{{ . }} read</span>{{ end }}
+      {{ if not .Date.IsZero }}<span class="meta-pill">Updated {{ .Date.Format "January 2, 2006" }}</span>{{ end }}
+      {{ with .CurrentSection }}<span class="meta-pill"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>{{ end }}
+    </p>
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+  </header>
+  <div class="prose">
+    {{ .Content }}
+  </div>
+  <div id="rfq-success" class="rfq-success" hidden>
+    <h2>Thank you for your inquiry.</h2>
+    <p>We will reply within 1 business day.</p>
+  </div>
+  <footer class="page-footer">
+    {{ with .CurrentSection }}<a class="back-link" href="{{ .RelPermalink }}">&larr; Back to {{ .Title }}</a>{{ end }}
+  </footer>
+</article>
+<script src="{{ "js/contact-form.js" | relURL }}"></script>
+{{ end }}

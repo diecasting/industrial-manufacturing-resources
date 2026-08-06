@@ -1,8 +1,9 @@
 ---
 title: "Request a Quote"
-description: "Get a manufacturing quote for die casting, CNC machining, tooling or molded parts. Send your project details and our engineering team responds within 1-2 business days."
+description: "Get a manufacturing quote for die casting, CNC machining, tooling or molded parts. Send your project details and our engineering team responds within 1 business day."
 date: 2026-08-06
 last_updated: "2026-08-07"
+type: contact
 ---
 
 ## Start your quote request
@@ -12,9 +13,12 @@ Tell us about your part or project — material, quantity, tolerances and timeli
 quote. The more detail you share, the faster we can turn around an accurate
 estimate.
 
-<form class="quote-form" action="mailto:sales@example.com" method="post" enctype="text/plain">
+<form id="rfq-form" class="quote-form" action="https://formspree.io/f/xpqgbdly" method="POST">
+  <input type="hidden" name="_subject" value="New RFQ Request from AlumCasting Website">
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
   <div>
-    <label for="name">Your name</label>
+    <label for="name">Name</label>
     <input id="name" name="name" type="text" required>
   </div>
   <div>
@@ -22,31 +26,41 @@ estimate.
     <input id="company" name="company" type="text" required>
   </div>
   <div>
-    <label for="email">Work email</label>
+    <label for="email">Email</label>
     <input id="email" name="email" type="email" required>
   </div>
   <div>
-    <label for="process">Process of interest</label>
-    <select id="process" name="process">
-      <option>Aluminum / Magnesium die casting</option>
-      <option>CNC machining</option>
-      <option>Tooling / mold making</option>
-      <option>Injection molding</option>
-      <option>Other / not sure yet</option>
+    <label for="country">Country</label>
+    <input id="country" name="country" type="text" required>
+  </div>
+  <div>
+    <label for="product">Product Requirement</label>
+    <textarea id="product" name="product" required placeholder="Describe the part, dimensions, tolerances, finish and target timeline..."></textarea>
+  </div>
+  <div>
+    <label for="material">Material</label>
+    <select id="material" name="material">
+      <option value="Aluminum alloy">Aluminum alloy</option>
+      <option value="Magnesium alloy">Magnesium alloy</option>
+      <option value="Zinc alloy">Zinc alloy</option>
+      <option value="Steel / Stainless">Steel / Stainless</option>
+      <option value="Plastics / Polymer">Plastics / Polymer</option>
+      <option value="Other">Other</option>
     </select>
   </div>
   <div>
-    <label for="message">Project details</label>
-    <textarea id="message" name="message" required placeholder="Material, quantities, dimensions, tolerances, target timeline..."></textarea>
+    <label for="quantity">Annual Quantity</label>
+    <input id="quantity" name="quantity" type="text" placeholder="e.g. 10,000 units / year">
+  </div>
+  <div>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Anything else we should know — drawings, certifications, packaging, etc."></textarea>
   </div>
   <button class="submit-btn" type="submit">Send quote request</button>
 </form>
 
 ### Other ways to reach us
 
-- **Email:** [sales@example.com](mailto:sales@example.com)
-- **Response time:** Typically within 1–2 business days.
-
-> Note: Replace `sales@example.com` on this page with your real sales address
-> (or point the form `action` at a form backend such as Formspree) before going
-> live. This page ships with a placeholder address so the link is never dead.
+- **Response time:** Within 1 business day.
+- **Process:** Submit the form above and our engineering team will review
+  feasibility and reply with an estimate.
