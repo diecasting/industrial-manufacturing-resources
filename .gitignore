@@ -1,0 +1,5 @@
+# Build / OS artifacts
+_build/
+.DS_Store
+*.test
+Thumbs.db
