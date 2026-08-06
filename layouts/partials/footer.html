@@ -1,0 +1,29 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <strong>{{ .Site.Title }}</strong>
+      <p>{{ .Site.Params.description }}</p>
+    </div>
+    <div class="footer-col">
+      <h4>Sections</h4>
+      <ul>
+        {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Project</h4>
+      <ul>
+        <li><a href="{{ .Site.Params.social.github | default "#" }}">GitHub Repository</a></li>
+        <li><a href="{{ "LICENSE" | relURL }}">License (CC BY 4.0)</a></li>
+        <li><a href="{{ "CODE_OF_CONDUCT.md" | relURL }}">Code of Conduct</a></li>
+        <li><a href="{{ "CONTRIBUTING.md" | relURL }}">Contributing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; {{ now.Year }} {{ .Site.Params.organization_name }}. {{ .Site.Params.copyright }}
+    Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+  </div>
+</footer>

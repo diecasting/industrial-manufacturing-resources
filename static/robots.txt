@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://diecasting.github.io/industrial-manufacturing-resources/sitemap.xml

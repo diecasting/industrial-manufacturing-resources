@@ -1,0 +1,16 @@
+Aluminum and magnesium high-pressure die casting: process control, porosity, gating, thermal management, DFM and cost.
+
+1. [Aluminum Die Casting Process: Complete Engineering Guide]({{< relref "aluminum-die-casting-process-guide.md" >}})
+2. [Die Casting Cost Drivers: How Casting Prices Are Built]({{< relref "die-casting-cost-drivers.md" >}})
+3. [Die Casting DFM: Wall Thickness, Draft Angles and Ribs]({{< relref "die-casting-dfm-guidelines.md" >}})
+4. [Die Casting Porosity: Causes, Detection and Prevention]({{< relref "die-casting-porosity-prevention.md" >}})
+5. [Die Casting vs Sand Casting vs Gravity Casting Compared]({{< relref "die-casting-vs-sand-vs-gravity-casting.md" >}})
+6. [Die Thermal Management: Cooling Lines and Die Temperature]({{< relref "die-thermal-management.md" >}})
+7. [Die Casting Gating and Runner Design Fundamentals]({{< relref "gating-and-runner-design.md" >}})
+8. [High Pressure Die Casting Parameters: HPDC Process Control]({{< relref "high-pressure-die-casting-parameters.md" >}})
+9. [Low Pressure Die Casting: Process, Applications and Limits]({{< relref "low-pressure-die-casting-guide.md" >}})
+10. [Magnesium Die Casting: Alloys, Parameters and Design Rules]({{< relref "magnesium-die-casting-guide.md" >}})
+11. [Die Casting Shot Profile and Intensification Pressure]({{< relref "shot-profile-and-intensification.md" >}})
+12. [Die Casting Surface Defects: Troubleshooting Guide]({{< relref "surface-defects-troubleshooting.md" >}})
+13. [Die Casting Trimming, Deburring and Secondary Operations]({{< relref "trimming-and-secondary-operations.md" >}})
+14. [Vacuum Assisted Die Casting: Reducing Gas Porosity]({{< relref "vacuum-assisted-die-casting.md" >}})

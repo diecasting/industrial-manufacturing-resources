@@ -1,0 +1,90 @@
+# ===========================================================================
+# Industrial Manufacturing Knowledge Base - Hugo configuration
+# Deployed to GitHub Pages: https://diecasting.github.io/industrial-manufacturing-resources/
+# ===========================================================================
+
+baseURL = "https://diecasting.github.io/industrial-manufacturing-resources/"
+title = "Industrial Manufacturing Knowledge Base"
+locale = "en-US"
+enableEmoji = false
+enableGitInfo = false
+
+# We do not use taxonomies; disable the empty /tags/ and /categories/ pages.
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+# Relative URLs are computed by Hugo (relref / relURL); baseURL is supplied at
+# build time by the GitHub Actions workflow so the same source builds anywhere.
+relativeURLs = false
+uglyURLs = false
+
+[params]
+  description = "Open industrial manufacturing knowledge base: aluminum & magnesium die casting, CNC machining, injection molding, tooling, materials, automotive manufacturing and supplier selection. 50+ engineering articles and reference tables."
+  author = "Industrial Manufacturing Knowledge Base"
+  organization_name = "Industrial Manufacturing Knowledge Base"
+  organization_url = "https://diecasting.github.io/industrial-manufacturing-resources/"
+  logo = "img/logo.svg"
+  copyright = "Content licensed under CC BY 4.0."
+
+[params.social]
+  github = "https://github.com/diecasting/industrial-manufacturing-resources"
+  rss = true
+
+# ---------------------------------------------------------------------------
+# Primary navigation
+# ---------------------------------------------------------------------------
+[menu]
+  [[menu.main]]
+    name = "Die Casting"
+    url = "/die-casting/"
+    weight = 10
+  [[menu.main]]
+    name = "CNC Machining"
+    url = "/cnc-machining/"
+    weight = 20
+  [[menu.main]]
+    name = "Tooling"
+    url = "/tooling/"
+    weight = 30
+  [[menu.main]]
+    name = "Automotive"
+    url = "/automotive/"
+    weight = 40
+  [[menu.main]]
+    name = "Materials"
+    url = "/materials/"
+    weight = 50
+  [[menu.main]]
+    name = "Supplier Selection"
+    url = "/supplier-selection/"
+    weight = 60
+  [[menu.main]]
+    name = "Reference"
+    url = "/reference/"
+    weight = 70
+  [[menu.main]]
+    name = "Glossary"
+    url = "/glossary/"
+    weight = 80
+  [[menu.main]]
+    name = "Downloads"
+    url = "/downloads/"
+    weight = 90
+
+# ---------------------------------------------------------------------------
+# Sitemap defaults (overridden per page via front-matter `sitemap` where useful)
+# ---------------------------------------------------------------------------
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+# ---------------------------------------------------------------------------
+# Markup / Goldmark
+# ---------------------------------------------------------------------------
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true   # allow raw HTML passthrough in articles
+  [markup.highlight]
+    noClasses = false
+

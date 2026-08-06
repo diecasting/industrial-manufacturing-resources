@@ -1,0 +1,41 @@
+{{ $siteTitle := .Site.Title }}
+{{ $orgName := .Site.Params.organization_name | default $siteTitle }}
+{{ $orgURL := .Site.Params.organization_url | default .Site.BaseURL }}
+{{ $logo := "" }}
+{{ with .Site.Params.logo }}{{ $logo = . | absURL }}{{ end }}
+{{ $desc := .Site.Params.description }}
+
+{{ $org := dict "@context" "https://schema.org" "@type" "Organization" "name" $orgName "url" $orgURL "description" $desc }}
+{{ if $logo }}{{ $org = merge $org (dict "logo" $logo) }}{{ end }}
+{{ if .Site.Params.social.github }}{{ $org = merge $org (dict "sameAs" (slice .Site.Params.social.github)) }}{{ end }}
+<script type="application/ld+json">{{ $org | jsonify | safeJS }}</script>
+
+{{ $site := dict "@context" "https://schema.org" "@type" "WebSite" "name" $siteTitle "url" $orgURL "description" $desc }}
+<script type="application/ld+json">{{ $site | jsonify | safeJS }}</script>
+
+{{ $pos := 1 }}
+{{ $items := slice }}
+{{ with .Site.Home }}{{ $items = $items | append (dict "name" .Title "url" .Permalink "position" $pos) }}{{ $pos = add $pos 1 }}{{ end }}
+{{ range .Ancestors.Reverse }}{{ $items = $items | append (dict "name" .Title "url" .Permalink "position" $pos) }}{{ $pos = add $pos 1 }}{{ end }}
+{{ if not .IsHome }}{{ $items = $items | append (dict "name" .Title "url" .Permalink "position" $pos) }}{{ end }}
+{{ $bc := dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $items }}
+<script type="application/ld+json">{{ $bc | jsonify | safeJS }}</script>
+
+{{ if .IsPage }}
+{{ $schemaType := "TechArticle" }}
+{{ if or (eq .Section "glossary") (eq .Section "downloads") }}{{ $schemaType = "Article" }}{{ end }}
+{{ $article := dict
+  "@context" "https://schema.org"
+  "@type" $schemaType
+  "headline" .Title
+  "description" (.Description | default $desc)
+  "datePublished" (.Date.Format "2006-01-02")
+  "dateModified" (.Lastmod.Format "2006-01-02")
+  "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+  "author" (dict "@type" "Organization" "name" $orgName)
+  "publisher" (dict "@type" "Organization" "name" $orgName)
+}}
+{{ if $logo }}{{ $article = merge $article (dict "publisher" (dict "@type" "Organization" "name" $orgName "logo" (dict "@type" "ImageObject" "url" $logo))) }}{{ end }}
+{{ with .Keywords }}{{ $article = merge $article (dict "keywords" (delimit . ", ")) }}{{ end }}
+<script type="application/ld+json">{{ $article | jsonify | safeJS }}</script>
+{{ end }}

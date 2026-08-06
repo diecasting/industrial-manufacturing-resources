@@ -1,5 +1,13 @@
 # Build / OS artifacts
 _build/
 .DS_Store
-*.test
 Thumbs.db
+*.test
+
+# Hugo build output
+/public/
+/resources/
+/hugo_stats.json
+
+# Hugo build lock
+.hugo_build.lock

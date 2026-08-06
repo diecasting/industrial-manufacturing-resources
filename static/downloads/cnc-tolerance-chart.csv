@@ -1,0 +1,12 @@
+Process / Feature,Typical ± (mm),Notes
+"General CNC (standard)",±0.125,"Shop default; ISO 2768-m equivalent"
+Precision CNC,±0.025,"Tight setup, qualified machine"
+Tight CNC,±0.0125,"Jig-bored, CMM verified"
+"Turned diameter (standard)",±0.025,CNC lathe
+"Milled pocket (standard)",±0.05,3-axis mill
+"Surface profile (3-axis)",±0.05,Position dependent
+"Flatness (ground)",0.01 / 100 mm,Per reference length
+"Hole, drilled",±0.125,As-drilled
+"Hole, reamed","H8 - H9 (±0.025)","Reaming after drill"
+"Hole, bored / reamed H7","H7 (±0.012 - 0.021)",Per nominal size
+"Hole, ground",H6,Precision bore

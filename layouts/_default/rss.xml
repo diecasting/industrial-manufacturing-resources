@@ -1,0 +1,20 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ .Title }} on {{ .Site.Title }}{{ end }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ .Site.Params.description }}</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>{{ .Site.Language.Locale }}</language>
+    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
+    <atom:link href="{{ .Permalink }}index.xml" rel="self" type="application/rss+xml" />
+    {{ range .Pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <guid>{{ .Permalink }}</guid>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+      {{ with .Description }}<description>{{ . | html }}</description>{{ end }}
+    </item>
+    {{ end }}
+  </channel>
+</rss>

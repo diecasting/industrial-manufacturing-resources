@@ -1,0 +1,8 @@
+Driver,Choose Aluminum,Choose Magnesium,Choose Zinc,Choose Engineering Plastic
+Strength needed,High,Medium,"High (Zamak)",Low - Medium
+Weight critical,Good,"Best (35% lighter)",Poor,Best
+Min wall thickness,0.8 - 1.2 mm,0.8 - 1.5 mm,0.5 - 0.8 mm,0.5 mm +
+Corrosion resistance,"Good (low-Cu alloys)",Fair - needs coating,Good,Excellent
+Service temperature,<200 °C,<120 °C,<100 °C,Varies by grade
+Relative cost,Medium,High,Low - Medium,Low - Medium
+"Plating / finish",Anodize - paint,Needs pre-treatment,Easy - direct plate,Paint only
