@@ -1,9 +1,9 @@
 # ===========================================================================
 # Industrial Manufacturing Knowledge Base - Hugo configuration
-# Deployed to GitHub Pages: https://diecasting.github.io/industrial-manufacturing-resources/
+# Deployed to GitHub Pages: https://knowledge.alumcasting.com/
 # ===========================================================================
 
-baseURL = "https://diecasting.github.io/industrial-manufacturing-resources/"
+baseURL = "https://knowledge.alumcasting.com/"
 title = "Industrial Manufacturing Knowledge Base"
 locale = "en-US"
 enableEmoji = false
@@ -21,7 +21,7 @@ uglyURLs = false
   description = "Open industrial manufacturing knowledge base: aluminum & magnesium die casting, CNC machining, injection molding, tooling, materials, automotive manufacturing and supplier selection. 50+ engineering articles and reference tables."
   author = "Industrial Manufacturing Knowledge Base"
   organization_name = "Industrial Manufacturing Knowledge Base"
-  organization_url = "https://diecasting.github.io/industrial-manufacturing-resources/"
+  organization_url = "https://knowledge.alumcasting.com/"
   logo = "img/logo.svg"
   copyright = "Content licensed under CC BY 4.0."
 

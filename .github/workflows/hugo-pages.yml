@@ -35,8 +35,7 @@ jobs:
           fetch-depth: 0
 
       - name: Build with Hugo
-        # baseURL is taken from hugo.toml
-        # (https://diecasting.github.io/industrial-manufacturing-resources/)
+        # baseURL is taken from hugo.toml (https://knowledge.alumcasting.com/)
         run: hugo --gc --minify
 
       - name: Deploy to GitHub Pages

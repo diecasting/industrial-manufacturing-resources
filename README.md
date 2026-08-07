@@ -2,13 +2,13 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Built with Hugo](https://img.shields.io/badge/Built%20with-Hugo-ff4088.svg)](https://gohugo.io/)
-[![Deployed: GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-1f6feb.svg)](https://diecasting.github.io/industrial-manufacturing-resources/)
+[![Deployed: GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-1f6feb.svg)](https://knowledge.alumcasting.com/)
 
 Open industrial manufacturing knowledge base covering **aluminum & magnesium die
 casting, CNC machining, injection molding, tooling, materials, automotive
 manufacturing and supplier selection**.
 
-> **Live site:** https://diecasting.github.io/industrial-manufacturing-resources/
+> **Live site:** https://knowledge.alumcasting.com/
 
 This repository is a [Hugo](https://gohugo.io/) static site. It is built
 automatically with GitHub Actions and published to GitHub Pages on every push to
@@ -49,9 +49,8 @@ hugo server        # preview at http://localhost:1313/
 hugo --minify      # production build into ./public
 ```
 
-The production `baseURL` is set in `hugo.toml` and overridden at deploy time by
-the GitHub Actions workflow so the same source builds under the project Pages
-path.
+The production `baseURL` is set in `hugo.toml` and used at deploy time by
+the GitHub Actions workflow so the same source builds for the custom domain.
 
 ## Repository layout
 
