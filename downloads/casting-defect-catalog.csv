@@ -1,0 +1,12 @@
+Defect,Cause,Identification,Correction
+Cold shut,"Low pour/die temperature or slow fill; two flow fronts meet without fusing","Visible line or shallow crack on surface, often far from gate","Raise melt and die temperature, increase fill rate, improve venting"
+Misrun,"Insufficient metal or fill velocity; thin section freezes before complete","Incomplete part, short fill at extremities and ribs","Increase wall/runner size, raise velocity, preheat die"
+"Porosity (gas)","Air or moisture entrapment, turbulent fill, excess lubricant gas","Round, smooth-walled voids; porous fracture surface","Reduce entrainment, vacuum assist, control lube, degas melt"
+"Porosity (shrinkage)","Localized shrinkage away from feeding path in thick sections","Irregular, dendritic voids at thick sections","Add feeders, chill thick areas, balance wall thickness"
+"Hot tear","Constraint during solidification; high-shrinkage alloy at rigid feature","Crack at corners or rib bases near the gate","Increase draft, round corners, reduce die constraint"
+"Solder (die)","Alloy welds to die steel at gate or hot spot","Metal stuck to die, rough local surface transfer","Adjust die temperature, apply coating, reduce local heat"
+Flash,"Excess metal at parting line; low clamp force or worn shutoff","Thin fin of metal at the die split line","Raise clamp tonnage, maintain shutoff, reduce specific pressure"
+Blister,"Subsurface gas expands on heating during plating or paint bake","Domed bubbles after coating or heat treatment","Reduce porosity, lower bake temperature, degas melt"
+Warpage,"Uneven cooling, residual stress, asymmetric wall sections","Dimensional distortion after ejection","Balance walls and cooling, redistribute ribbing, stress relieve"
+Inclusion,"Oxide, silicon or foreign particle carried in the melt","Hard spot or void with embedded particle, machining defect","Improve melt handling, filtration, degassing"
+Erosion,"High-velocity metal washes and erodes die steel at gate","Gouged cavity near gate, progressive dimensional growth","Harden cavity steel, tune velocity, balance gating"

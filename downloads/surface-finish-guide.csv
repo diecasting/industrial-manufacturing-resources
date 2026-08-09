@@ -1,0 +1,9 @@
+Process,Ra (µm),Typical application
+As-cast,3.2 - 6.3,"Die cast, no secondary finish"
+Bead blast,3.0 - 6.0,"Matte, uniform appearance"
+Turning (CNC),1.6 (0.8 - 3.2),"Round, revolved features"
+Milling (standard),0.8 - 3.2,"General CNC features"
+Milling (fine),0.8,"High-speed, sharp tooling"
+Grinding,0.2 - 0.4,"Seal faces, bearing seats"
+Polishing,<0.1,"Cosmetic, optical, sliding"
+Powder coat (build-up),+25 - 60 µm,"Adds thickness, not Ra"

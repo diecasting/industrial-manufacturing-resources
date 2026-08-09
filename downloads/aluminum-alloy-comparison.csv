@@ -1,0 +1,7 @@
+Alloy,Si %,Cu %,Mg %,Fe max %,Tensile MPa,Yield MPa,Elong %,Density g/cm3,Typical use
+A380,7.5-9.5,3.5-4.5,≤0.10,1.3 (2.0 design),320,160,3-4,2.71,"General HPDC, brackets, housings"
+ADC12,9.6-12.0,1.5-3.5,≤0.30,1.3,310,150,1-3,2.70,"Asian-supply HPDC, thin walls"
+A383,9.5-11.5,2.0-3.0,≤0.10,1.3,300,150,2-3,2.70,"Complex dies, hard-to-fill shapes"
+A360,9.0-10.0,≤0.60,0.40-0.60,1.3,320,170,3-5,2.68,"Corrosion-resistant, pressure-tight"
+A413,11.0-13.0,≤1.0,≤0.10,1.3,280,140,3-4,2.66,"High fluidity, very thin sections"
+A356,6.5-7.5,≤0.20,0.25-0.45,0.6,310 (T6),230 (T6),6-10,2.69,"Structural, heat treated (T5/T6)"
